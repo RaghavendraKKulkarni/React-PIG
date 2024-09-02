@@ -1,1 +1,1 @@
-This is a React project to build a PIG
+This is a React project to build a PIG dashboard

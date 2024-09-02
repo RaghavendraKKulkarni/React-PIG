@@ -1,0 +1,27 @@
+Bundlar -> webpack, parcel are some of bundlers that bundles all of js, html, css into one and ships it.
+
+we will use parcel bundler.
+
+
+package.json -> package of npm that keeps track of all dependency and it's versions
+package-lock.json -> has all the specific versions that are currently used in the project
+
+
+#Parcel bundler
+- Dev build 
+- Local Server
+- HMR- Hot deployment Replacement
+- File watching Algorithm - written in C++
+- catching - builds fast
+- Also does image optimisation
+- Minification of all files for prod build
+- compress files to smaller size 
+- consistent hashing
+- code splitting
+- Differential bundling - app can be opened in any browsers/ versions
+- can provide https server as well for test
+- Diagnostic errors
+- Tree Shaking - It removes unused code before shipping and bundles
+
+
+
