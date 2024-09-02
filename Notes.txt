@@ -1,3 +1,10 @@
+npm install 
+npm install -d parcel
+npm install react
+npm install react-dom
+
+
+
 Bundlar -> webpack, parcel are some of bundlers that bundles all of js, html, css into one and ships it.
 
 we will use parcel bundler.
