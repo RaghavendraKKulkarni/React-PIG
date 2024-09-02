@@ -1,9 +1,17 @@
+|commands to run
 npm install 
 npm install -d parcel
 npm install react
 npm install react-dom
 
+npx parcel index.html  -> to run the app on localhost
 
+Instead of running this above command, we can give alias in package.json like below and run it
+"scripts": {
+    "start":"parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  }
 
 Bundlar -> webpack, parcel are some of bundlers that bundles all of js, html, css into one and ships it.
 
@@ -32,3 +40,46 @@ package-lock.json -> has all the specific versions that are currently used in th
 
 
 
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+const heading = React.createElement(
+  "h1",
+  {
+    id: "heading",
+    xyz: "random attribute",
+  },
+  "Hello world from React!!"
+);
+
+//This is how react internally works
+//heading variable is a react js object not an html element
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+//jsx is not html in js, it is html like syntax
+//jsx is not understood by browser js engine, parcel transpiles this code jsx to js
+// parcel uses babel to make this conversion.
+const jsxHeading = <h1 id="heading">Namaste React using JSX</h1>;
+
+//React component
+//classbased (old)  
+//functional component (new)
+//{number}-> can write js inside html using {}
+const number =1000;
+const HeadingFunctionalComponent=()=>{
+     return (
+     <div id="container">
+        {Title()}
+        <Title/>
+     <h2 id="heading" className="heading">
+        Namaste React functional component {number}</h2>
+        </div>
+        );
+}
+
+const Title=()=>{
+    return <h1 id="heading" className="heading">
+        Namaste Title</h1>;
+}
+
+root.render(<HeadingFunctionalComponent/>);
