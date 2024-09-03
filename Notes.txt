@@ -83,3 +83,31 @@ const Title=()=>{
 }
 
 root.render(<HeadingFunctionalComponent/>);
+
+
+
+
+
+Two types of exports/Imports,
+Default,
+export default component;
+import component from "path";
+
+named,
+export const component;
+import {component} from "path";
+
+
+React Hooks
+-normal js utility functions
+-useState() - state variables, if this variable changes -> UI will be re-rendered
+-useEffect()
+
+why React is fast-> because of dom manipulation
+-reconcilation algorithm -> React Fiber
+
+virtual dom is a representation of Actual dom -> jsx which is js objects
+So if any changes happens, it simply updates this js object 
+how it knows changes -> it compares previous virtual node and current virtual node
+this is done by diff algorithm-> react fiber
+
