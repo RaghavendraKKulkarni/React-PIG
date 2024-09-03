@@ -33,6 +33,9 @@ const FeatureList = [
   { name: "Manage Rules" , id:2},
   { name: "Manage Exceptions" , id:3},
   { name: "View SKUs" , id:4},
+  { name: "Evaluate API" , id:5},
+  { name: "Manage Category" , id:6},
+  { name: "Manage Prices" , id:7},
 ];
 const Body = () => {
   return (
