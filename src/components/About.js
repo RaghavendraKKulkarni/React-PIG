@@ -1,8 +1,12 @@
+import SKUPriceDetails from "./SKUPriceDetails";
+import data from "../utils/getData.json";
+
 const About=()=>{
     return (
         <div>
-            <h1>About us</h1>
+           
             {/* <CardSlider /> */}
+            <SKUPriceDetails skuData={data.deliveryPricing[0]} />
         </div>
     )
 }
