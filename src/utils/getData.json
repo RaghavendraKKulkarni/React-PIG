@@ -1,0 +1,34 @@
+{
+    "deliveryPricing": [
+        {
+            "sku": "AB123",
+            "very": {
+                "modalContentKey": "1PersonDCKey",
+                "prices": {
+                    "STD": 3.99,
+                    "NXT": 4.99,
+                    "NOM": 4.99,
+                    "CPL": 3.99
+                }
+            },
+            "littlewoods": {
+                "modalContentKey": "1PersonDCKeyLW",
+                "prices": {
+                    "STD": 0.00,
+                    "NXT": 3.99,
+                    "NOM": 4.99,
+                    "CPL": 0.0
+                }
+            },
+            "very.ie": {
+                "modalContentKey": "1PersonDCKey",
+                "prices": {
+                    "STD": 1.99,
+                    "NXT": 3.99,
+                    "NOM": 5.99,
+                    "EXP": 2.99
+                }
+            }
+        }
+    ]
+}
