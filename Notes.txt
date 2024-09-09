@@ -111,3 +111,11 @@ So if any changes happens, it simply updates this js object
 how it knows changes -> it compares previous virtual node and current virtual node
 this is done by diff algorithm-> react fiber
 
+
+useEffect, []-> optional dependency array object
+   useEffect(() => {}, []); -> calls only once during initialization
+   useEffect(() => {}); -> calls everytime a component is rendered
+   useEffect(() => {},[xyz]); -> calls at init and calls everytime xyz is changed
+
+Routing,
+-
