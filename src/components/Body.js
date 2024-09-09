@@ -40,6 +40,7 @@ const Body = () => {
         <div className="search">
           <input
             type="text"
+            placeholder="Search here.."
             className="search-box"
             value={searchText}
             onChange={(e) => {

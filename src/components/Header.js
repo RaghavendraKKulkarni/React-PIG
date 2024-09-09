@@ -4,12 +4,17 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   // let btName = "Login";
-console.log("Header called");
+  console.log("Header called");
   const [btnName, setbtnName] = useState("Login");
   return (
     <div className="header">
       <div>
         <img className="logo" src={LOGO_URL} />
+      </div>
+      <div class="title">
+        
+          <p>P.I.G</p>
+        
       </div>
       <div className="nav-items">
         <ul>
