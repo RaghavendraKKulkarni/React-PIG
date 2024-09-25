@@ -12,13 +12,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
     padding: 10px 20px;
     border-bottom: 1px solid #ddd;
     background-color: #f8f8f8;
   }
   
   .logo {
-    width: 100px;
+    width: 75px;
     padding: 10px;
   }
   
@@ -324,3 +325,87 @@ body {
 }
 
   
+.edit-cat-price {
+   display: none;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 205px; /* Fixed width for the sidebar */
+  height: 100vh; /* Full height of the viewport */
+  position: fixed; /* Fixed position on the left */
+  top: 0;
+  left: 0;
+  background-color: #f4f4f4; /* Background color */
+  display: flex;
+  flex-direction: column; /* Ensures vertical alignment */
+  justify-content: flex-start; /* Aligns items at the top */
+  padding: 0px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+ 
+/* Sidebar item styles */
+.sidebar-item {
+  padding: 0px;
+  margin-bottom: 10px;
+  text-decoration: none; /* Remove default link underline */
+  color: #333; /* Text color */
+  background-color: #eaeaea; /* Light background */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+ 
+/* .sidebar-item:hover {
+  background-color: #ddd; /* Darker background on hover 
+}*/
+/* Ensure that the main content area is offset from the sidebar */
+.content {
+  margin-left: 205px; /* Offset the content by the sidebar's width */
+  padding: 20px;
+}
+
+
+.sidebar-items {
+  padding-right: 0px;
+}
+
+/* .sidebar-items > ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+} */
+
+.sidebar-items > ul > li {
+  list-style: none;
+  position: relative;
+  padding: 5px;
+  border: 5px;
+  align-items: center;
+}
+
+/* .sidebar-items > ul > li a {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+} */
+
+.sidebar-items > ul > li a:hover {
+  color: #ff69b4; /* Lighter pink */
+}
+
+/* .sidebar-items > ul > li.active a {
+  color: #ff69b4;
+  font-weight: bold;
+} */
+
+.sidebar-items > ul > li:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #ff69b4;
+  transition: all 0.3s;
+}

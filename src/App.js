@@ -5,15 +5,29 @@ import Body from "./components/Body";
 import About from "./components/About";
 import ServiceDetails from "./components/ServiceDetail";
 import Error from "./components/Error";
+import SideBar from "./components/SideBar";
 
 
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+
+// const AppLayout = () => {
+//   return (
+//     <div className="app">
+//       <Header />
+//       <Outlet/> {/** this is replaced based on children selection*/}
+//       <SideBar/>
+//     </div>
+//   );
+// };
 
 const AppLayout = () => {
   return (
     <div className="app">
       <Header />
-      <Outlet/> {/** this is replaced based on children selection*/}
+      <SideBar /> 
+      <div className="content">
+        <Outlet /> {/* Main content goes here */}
+      </div>
     </div>
   );
 };

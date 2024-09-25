@@ -23,7 +23,7 @@ const Body = () => {
     setTimeout(() => {
       setListOfFeatures(FeatureList);
       setAPIData(FeatureList);
-    }, 300);
+    }, 1000);
   };
 
   //conditional rendering

@@ -1,14 +1,16 @@
 import React from 'react';
+import { useState } from 'react';
 
 const SKUPriceDetails = ({ skuData }) => {
   if (!skuData) return null;
 
   // Extract data for easier access
   const { very, littlewoods, 'very.ie': veryIe } = skuData;
+  const [searchText, setSearchText] = useState("");
 
   return (
     <div className="sku-price-details">
-       <h1 >Product Price Details</h1>
+      <h1 >Product Price Details</h1>
       <h2>SKU: {skuData.sku}</h2>
       <div className="brands-container">
         {/* Display brands in the first row */}
@@ -17,7 +19,10 @@ const SKUPriceDetails = ({ skuData }) => {
           <div className="price-list">
             {Object.entries(very.prices).map(([category, price]) => (
               <div key={category} className="price-item">
-                <span>{category}:</span> <span>${price.toFixed(2)}</span>
+                <span>{category}:</span>
+               
+                  <span>£{price.toFixed(2)}</span>
+               
               </div>
             ))}
           </div>
@@ -30,7 +35,7 @@ const SKUPriceDetails = ({ skuData }) => {
           <div className="price-list">
             {Object.entries(littlewoods.prices).map(([category, price]) => (
               <div key={category} className="price-item">
-                <span>{category}:</span> <span>${price.toFixed(2)}</span>
+                <span>{category}:</span> <span>£{price.toFixed(2)}</span>
               </div>
             ))}
           </div>
@@ -43,7 +48,7 @@ const SKUPriceDetails = ({ skuData }) => {
           <div className="price-list">
             {Object.entries(veryIe.prices).map(([category, price]) => (
               <div key={category} className="price-item">
-                <span>{category}:</span> <span>${price.toFixed(2)}</span>
+                <span>{category}:</span> <span>£{price.toFixed(2)}</span>
               </div>
             ))}
           </div>

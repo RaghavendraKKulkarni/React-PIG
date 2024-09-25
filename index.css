@@ -1,8 +1,4 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid black;
-}
+
 .logo {
   width: 85px;
   padding: 5px 5px;
