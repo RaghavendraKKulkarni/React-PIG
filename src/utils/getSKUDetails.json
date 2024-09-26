@@ -1,0 +1,52 @@
+{
+    "productDeliveryPriceResponse": {
+        "product": [
+            {
+                "sku": "AB123",
+                "style": "style",
+                "numberOfPacks": 1,
+                "productType": 4,
+                "shortDescription": "asd",
+                "size": "s",
+                "colour": "red",
+                "season": "sum",
+                "category": "Fashion",
+                "categoryName": "name",
+                "subCategory": "sub_category",
+                "subCategoryName": "sub_category_name",
+                "range": "range",
+                "rangeName": "range_name",
+                "department": "home",
+                "departmentName": "department",
+                "reportingRange": "report",
+                "reportingRangeName": "range_name",
+                "distributionCode": "cd",
+                "carrier": "DPD",
+                "length": 12,
+                "width": 6,
+                "height": 1000,
+                "weight": 1000,
+                "weightCode": 0,
+                "deliveryRestriction": 0,
+                "supplier": "S104",
+                "isDirectShipping": false,
+                "baseSellingPrice": 12,
+                "costPrice": 112,
+                "onSaleDate": "2024-08-15",
+                "offSaleDate": "2024-09-12",
+                "lastUpdatedTime": "2024-07-20T11:46:53.278405",
+                "lastPublishedTime": "2024-09-25T15:17:38.419793",
+                "deliveryPrice": [
+                    {
+                        "brand": "LAI",
+                        "deliveryPricingRule": "IE SMALL",
+                        "deliveryPricingGroup": "testGroup2",
+                        "lastEvaluationDateTime": "2024-09-25T15:17:36.294783",
+                        "modalContentKey": "modal",
+                        "ffmModalContentKey": "test"
+                    }
+                ]
+            }
+        ]
+    }
+}
